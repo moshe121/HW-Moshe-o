@@ -1,5 +1,6 @@
 var salary = prompt("אנא הזן את משכורתך");
 var tax = 0;
+var message = "";
 if (salary < 25000) {
     tax = salary / 10;
 }
@@ -15,4 +16,5 @@ if (salary > 100000 && salary < 150000) {
 if (salary > 150000) {
     tax = 42500 + ((salary - 150000) / 10) * 5;
 }
-alert(tax);
+message = "אתה חייב לשלם למס הכנסה " + tax + " שקלים חדשים";
+alert(message);
